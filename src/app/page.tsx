@@ -33,7 +33,7 @@ export default function Home() {
           <div className="flex flex-row justify-between">
             <div className="font-italics mb-20 mt-20">
               <h1 className="text-5xl font-bold">
-                Hello, I'm <span className="text-orange-500 ">Bikram</span>
+                Hello, I&apos;m <span className="text-orange-500 ">Bikram</span>
               </h1>
               <div className="flex flex-row gap-4 mt-4">
                 <a
