@@ -11,24 +11,27 @@ export default function Home() {
       description:
         "Built using Next.js, TailwindCSS, and Supabase. It uses a custom trained model to recommend games to users based on their preferences.",
       link: "https://www.google.com",
+      techStack: "Next.js, TailwindCSS, Supabase",
     },
     {
       title: "Project 2",
       description:
         "Description of Project 2. Here's a summary of the project's goals and achievements.",
       link: "https://www.google.com",
+      techStack: "Next.js, TailwindCSS, Supabase",
     },
     {
       title: "Project 3",
       description:
         "Description of Project 3. This project focuses on specific aspects and delivers unique results.",
       link: "https://www.google.com",
+      techStack: "Next.js, TailwindCSS, Supabase",
     },
   ];
 
   return (
     <div>
-      <main className="container px-4 ml-40 flex flex-col w-1/3 mt-8 justify-start items-start">
+      <main className="container px-4 mx-auto flex flex-col w-1/3 mt-8 justify-start items-start">
         <div className="">
           <div className="flex flex-row justify-between">
             <div className="font-italics mb-20 mt-20">
@@ -37,7 +40,7 @@ export default function Home() {
               </h1>
               <div className="flex flex-row gap-4 mt-4">
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/bikram9-9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300"
@@ -45,12 +48,19 @@ export default function Home() {
                   <FaGithub size={24} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/singh-bikram/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300"
                 >
                   <FaLinkedin size={24} />
+                </a>
+                <a
+                  href="/resume.pdf"
+                  download
+                  className="underline dark:text-white"
+                >
+                  Resume
                 </a>
               </div>
             </div>
@@ -60,25 +70,13 @@ export default function Home() {
                 alt="Profile"
                 width={200}
                 height={200}
-                className="w-3/4 h-auto rotate-180 rounded-full object-cover"
+                className="w-3/4 h-auto  rounded-full object-cover"
                 quality={85}
               />
             </div>
           </div>
 
           <RecentProjects projects={projects} />
-        </div>
-      </main>
-      <main className="container mx-auto justify-center items-center mt-40">
-        <div className="flex items-center justify-between p-6 w-full rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold">Resume</h2>
-          <a
-            href="/path/to/your/resume.pdf"
-            download
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
-          >
-            Download
-          </a>
         </div>
       </main>
     </div>

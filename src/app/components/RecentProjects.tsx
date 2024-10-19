@@ -8,25 +8,29 @@ interface RecentProjectsProps {
 
 const RecentProjects: React.FC<RecentProjectsProps> = ({ projects }) => {
   return (
-    <section className="mt-8">
-      <h2 className="text-2xl font-bold font-italics mb-6">Recent Projects</h2>
-      <ul className="space-y-8 mt-10">
+    <section className="mt-8 w-3/4">
+      <h2 className="text-2xl font-bold font-italics mb-6 ">Recent Projects</h2>
+      <ul className="space-y-10 mt-10">
         {projects.map((project, index) => (
           <li key={index}>
             <h3 className="text-2xl font-italics">{project.title}</h3>
             <p className="mt-2 text-md">{project.description}</p>
-            <div className="flex flex-row justify-between mt-4">
+            <p className="mt-2 text-md font-bold">
+              Tech Stack:{" "}
+              <span className="font-normal">{project.techStack}</span>
+            </p>
+            <div className="flex flex-row justify-start gap-4 items-center mt-4">
               <Link
                 href={project.link}
-                className="text-blue-500 dark:text-white"
+                className="text-blue-500 dark:text-blue-300 hover:underline"
               >
-                Repository
+                Codebase
               </Link>
               <Link
                 href={project.link}
-                className="text-blue-500 dark:text-white"
+                className="text-orange-500 dark:text-orange-500 hover:underline font-italics"
               >
-                Demo
+                Project Demo
               </Link>
             </div>
           </li>
