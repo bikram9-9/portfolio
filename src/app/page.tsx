@@ -28,41 +28,45 @@ export default function Home() {
 
   return (
     <div>
-      <main className="container mx-auto px-4 grid grid-cols-2 gap-20 mt-20 justify-center items-center">
-        <div>
-          <div className="font-italics mb-20 mt-20">
-            <h1 className="text-5xl font-bold">
-              Hello, I'm <span className="text-orange-500 ">Bikram</span>
-            </h1>
-            <a
-              href="https://github.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-700 hover:text-gray-900"
-            >
-              <FaGithub size={24} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-700 hover:text-gray-900"
-            >
-              <FaLinkedin size={24} />
-            </a>
+      <main className="container px-4 ml-40 flex flex-col w-1/3 mt-8 justify-start items-start">
+        <div className="">
+          <div className="flex flex-row justify-between">
+            <div className="font-italics mb-20 mt-20">
+              <h1 className="text-5xl font-bold">
+                Hello, I'm <span className="text-orange-500 ">Bikram</span>
+              </h1>
+              <div className="flex flex-row gap-4 mt-4">
+                <a
+                  href="https://github.com/yourusername"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300"
+                >
+                  <FaGithub size={24} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/yourusername"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300"
+                >
+                  <FaLinkedin size={24} />
+                </a>
+              </div>
+            </div>
+            <div className="flex justify-center items-center">
+              <Image
+                src="/images/profile.JPG"
+                alt="Profile"
+                width={200}
+                height={200}
+                className="w-3/4 h-auto rotate-180 rounded-full object-cover"
+                quality={85}
+              />
+            </div>
           </div>
 
           <RecentProjects projects={projects} />
-        </div>
-        <div className="flex justify-center items-center">
-          <Image
-            src="/images/profile.JPG"
-            alt="Profile"
-            width={200}
-            height={200}
-            className="w-full h-auto rotate-180 rounded-full object-cover"
-            quality={85}
-          />
         </div>
       </main>
       <main className="container mx-auto justify-center items-center mt-40">
