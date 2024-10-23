@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <div>
-      <main className="container px-4 mx-auto flex flex-col w-1/3 mt-8 justify-start items-start">
+      <main className="container px-4 mx-auto flex flex-col w-2/3 mt-8 justify-start items-center">
         <div className="">
           <div className="flex flex-row justify-between">
             <div className="font-italics mb-20 mt-20">
