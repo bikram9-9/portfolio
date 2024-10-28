@@ -7,16 +7,17 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Home() {
   const projects: Project[] = [
     {
+      title: "Skill Tracking and Recommendation System",
+      description:
+        "A full-stack application built with Next.js 15 and TypeScript serving 1,400+ active users (integrated with OpenAI). Implemented Firebase OAuth for secure user authentication and MongoDB for efficient data management. Features internal API routes for seamless data handling and personalized skill recommendations based on user progress and goals.",
+      link: "https://www.google.com",
+      techStack:
+        "Next.js,  OpenAI APIs 4o-turbo,TypeScript, Firebase, MongoDB,",
+    },
+    {
       title: "Game Recommendation System",
       description:
         "Built using Next.js, TailwindCSS, and Supabase. It uses a custom trained model to recommend games to users based on their preferences.",
-      link: "https://www.google.com",
-      techStack: "Next.js, TailwindCSS, Supabase",
-    },
-    {
-      title: "Project 2",
-      description:
-        "Description of Project 2. Here's a summary of the project's goals and achievements.",
       link: "https://www.google.com",
       techStack: "Next.js, TailwindCSS, Supabase",
     },
